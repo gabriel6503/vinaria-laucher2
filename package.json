@@ -1,7 +1,7 @@
 {
     "name": "vinaria-launcher",
     "preductname": "vinaria launcher",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "vinaria network modded server launcher",
     "main": "src/app.js",
     "author": "vinaria network",
