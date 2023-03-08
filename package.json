@@ -1,7 +1,7 @@
 {
     "name": "vinaria-launcher",
     "preductname": "vinaria launcher",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "vinaria network modded server launcher",
     "main": "src/app.js",
     "author": "vinaria network",
@@ -36,6 +36,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/gabriel6503/vinaria-laucher.git"
+        "url": "git+https://github.com/gabriel6503/vinaria-laucher2.git"
     }
 }
