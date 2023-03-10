@@ -22,7 +22,7 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "bienvenue", "author": "vinaria-network" },
+            { "message": "bienvenu", "author": "vinaria-network" },
             
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
@@ -44,12 +44,13 @@ class Splash {
     async checkUpdate() {
         if (dev) return this.startLauncher();
         this.setStatus(`recherche de mise à jour...`);
+        this.setStatus(`Démarrage du launcher`);
+        ipcRenderer.send('main-window-open');
+        ipcRenderer.send('update-window-close');
 
         ipcRenderer.invoke('update-app').then(err => {
-            if (err.error) {
-                let error = err.message;
-                this.shutdown(`erreur lors de la recherche de mise à jour :<br>${error}`);
-            }
+            if (err.error) return this.startLauncher();
+                
         })
 
         ipcRenderer.on('updateAvailable', () => {
