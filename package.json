@@ -4,8 +4,8 @@
     "version": "0.0.1",
     "description": "vinaria modded server launcher",
     "main": "src/app.js",
-    "author": "Luuxis/Riptiaz",
-    "url": "http://localhost/launcher",
+    "author": "vinaria-network",
+    "url": "https://launcher.axoworld.fr",
     "azauth": "https://vakyum.fr",
     "engines": {
         "node": "16.x.x"
